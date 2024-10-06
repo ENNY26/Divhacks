@@ -11,6 +11,11 @@ import MorningSchedule from './COMPONENTS/MorningSchedule/MorningSchedule';
 import RelaxationCenter from './COMPONENTS/RelaxationCenter/RelaxationCenter';
 import DrawingCanvas from './COMPONENTS/DrawingCanvas/DrawingCanvas';
 import YesOrNo from './COMPONENTS/YesorNo/YesorNo';
+import Listen from './COMPONENTS/Listen/listen';
+import AfternoonSchedule from './COMPONENTS/AfternoonSchedule/MorningSchedule'
+import NightSchedule from './COMPONENTS/NightSchedule/MorningSchedule'
+import Forum from './COMPONENTS/Forum/forum'
+
 
 
 const App = () => {
@@ -35,6 +40,11 @@ const App = () => {
       <Route path="relax" element={<RelaxationCenter />} />
       <Route path="draw" element={<DrawingCanvas />} />
       <Route path="Yesorno" element={<YesOrNo />} />
+      <Route path="listen-and-learn" element={<Listen />} />
+      <Route path="afternoon" element={<AfternoonSchedule/>} />
+      <Route path="night" element={<NightSchedule/>} />
+      <Route path="forum" element={<Forum/>} />
+
 
       </Routes>
     </Router>

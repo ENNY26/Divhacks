@@ -8,6 +8,7 @@ const DrawingCanvas = () => {
   const [color, setColor] = useState('#000000'); // Default color is black
   const [brushSize, setBrushSize] = useState(5); // Default brush size
 
+  // Set up canvas only once when the component mounts
   useEffect(() => {
     const canvas = canvasRef.current;
     canvas.width = canvas.offsetWidth;
@@ -15,9 +16,15 @@ const DrawingCanvas = () => {
     const context = canvas.getContext('2d');
     context.lineCap = 'round';
     context.lineJoin = 'round';
-    context.strokeStyle = color;
-    context.lineWidth = brushSize;
     contextRef.current = context;
+  }, []);
+
+  // Update color and brush size dynamically without resetting the canvas
+  useEffect(() => {
+    if (contextRef.current) {
+      contextRef.current.strokeStyle = color;
+      contextRef.current.lineWidth = brushSize;
+    }
   }, [color, brushSize]);
 
   // Start Drawing

@@ -1,0 +1,42 @@
+.scheduling-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .scheduling-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .schedule-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    gap: 20px;
+  }
+  
+  .schedule-card {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .schedule-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .schedule-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .card-text {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  

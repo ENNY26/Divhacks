@@ -1,0 +1,69 @@
+.contact-form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+box-shadow: 0 4px 6px rgba(255, 255, 255, 0.5);
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+  }
+  input {
+    background-color: #ffffff; /* White background */
+    color: #000000; /* Black text */
+    border: 1px solid #ccc; /* Optional: Adds a border */
+    padding: 10px; /* Optional: Adds some padding */
+  }
+  
+  textarea {
+    background-color: #ffffff; /* White background */
+    color: #000000; /* Black text */
+    border: 1px solid #ccc; /* Optional: Adds a border */
+    padding: 10px; /* Optional: Adds some padding */
+    width: 100%; /* Optional: Make it full width */
+    height: 150px; /* Set a height */
+  }
+  
+  
+  textarea {
+    height: 100px;
+    resize: none;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #6b2d83;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #d174d2;
+  }
+  
