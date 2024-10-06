@@ -1,0 +1,127 @@
+:root {
+    --primary-color: #d174d2; /* Base Purple */
+    --accent-color: #f4c2d7; /* Soft Pink */
+    --dark-purple: #6b2d83;  /* Darker Purple */
+    --light-gray: #e6e6e6;   /* Light Gray */
+    --dark-gray: #3a3a3a;    /* Dark Gray */
+    --white: #ffffff;        /* White */
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--light-gray);
+  }
+  
+  .auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../../assets/view-3d-kids-with-lanterns-night.jpg'); /* Add your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--light-gray); /* Fallback color */
+  }
+  
+  .form-container {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent for glass effect */
+    backdrop-filter: blur(10px); /* Frosted glass */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
+    width: 400px;
+    max-width: 100%;
+  }
+  
+  h2 {
+    color: var(--dark-purple);
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--dark-gray);
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.2); /* Transparent inputs */
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .input-group input:focus {
+    border-color: var(--primary-color);
+  }
+  
+  .auth-button {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .auth-button:hover {
+    background-color: var(--dark-purple);
+  }
+  
+  .google-signin {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .google-button {
+    color: black;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--white);
+    border: 1px solid var(--dark-gray);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+ 
+  
+  .google-icon {
+    width: 20px;
+    margin-right: 10px;
+  }
+  
+  .toggle-text {
+    text-align: center;
+    margin-top: 15px;
+    color: var(--dark-gray);
+  }
+  
+  .toggle-text span {
+    color: var(--primary-color);
+    cursor: pointer;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .toggle-text span:hover {
+    color: var(--dark-purple);
+  }
+  

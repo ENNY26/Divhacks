@@ -1,0 +1,123 @@
+/* Overall container */
+.relaxing-activities-container {
+    padding: 20px;
+    background-color: #f4c2d7; /* Soft pink background */
+    text-align: center;
+  }
+  
+  /* Breathing section */
+  .breathing-section {
+    margin-bottom: 40px;
+  }
+  
+  .breathing-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow the cards to wrap on smaller screens */
+    margin-top: 20px;
+  }
+  
+  .breathing-card {
+    width: 45%; /* Take up 45% of the container on large screens */
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 20px; /* Space between cards */
+  }
+  
+  .breathing-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Large number on each card */
+  .step-number {
+    font-size: 5rem;
+    color: #6b2d83; /* Dark purple */
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+    opacity: 0.2; /* Semi-transparent */
+  }
+  
+  .breathing-image {
+    border-radius: 15px;
+  }
+  
+  .breathing-info {
+    margin-top: 15px;
+  }
+  
+  .breathing-info h3 {
+    color: #6b2d83;
+  }
+  
+  .breathing-info p {
+    color: #3a3a3a;
+  }
+  
+  /* Media Query: For screens smaller than 768px (mobile devices) */
+  @media (max-width: 768px) {
+    .breathing-cards {
+      flex-direction: column; /* Stack cards on top of each other */
+      align-items: center;    /* Center the cards horizontally */
+    }
+  
+    .breathing-card {
+      width: 100%; /* Full width on mobile */
+    }
+  }
+  
+  /* Drawing Section */
+  .drawing-section {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 40px;
+  }
+  
+  .start-drawing-button {
+    background-color: #6b2d83; /* Dark purple */
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .start-drawing-button:hover {
+    background-color: #3a3a3a;
+  }
+  
+  /* Soothing Sounds Section */
+  .sounds-section {
+
+    margin-bottom: 40px;
+  }
+  
+  .sounds-buttons-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  button {
+    background-color: #6b2d83;
+  }
+  .sound-button:hover {
+    background-color: #f4c2d7;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sound-icon {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  

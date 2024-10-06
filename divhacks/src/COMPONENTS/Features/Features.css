@@ -1,0 +1,54 @@
+/* Features.css */
+
+.features-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: var(--light-gray); /* Light Gray */
+  }
+  
+  .features-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: var(--dark-purple); /* Dark Purple */
+  }
+  
+  .features-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .feature-card {
+    background-color: var(--white); /* White */
+    border: 2px solid var(--dark-gray); /* Dark Gray */
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .feature-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .feature-title {
+    font-size: 1.5rem;
+    color: var(--primary-color); /* Base Purple */
+    margin-bottom: 10px;
+  }
+  
+  .feature-description {
+    font-size: 1rem;
+    color: var(--dark-gray); /* Dark Gray */
+  }
+  

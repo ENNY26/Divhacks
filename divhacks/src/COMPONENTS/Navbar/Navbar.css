@@ -1,0 +1,64 @@
+:root {
+    --primary-color: #d174d2; /* Base Purple */
+    --accent-color: #f4c2d7; /* Soft Pink */
+    --dark-purple: #6b2d83;  /* Darker Purple */
+    --light-gray: #e6e6e6;   /* Light Gray */
+    --dark-gray: #3a3a3a;    /* Dark Gray */
+    --white: #ffffff;        /* White */
+  }
+
+.navbar{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: var(--dark-purple);
+   padding: 15px 30px;
+   position: sticky;
+   top: 0;
+   z-index: 100;
+}
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--white); /* White */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+  }
+  
+  .nav-links li {
+    display: inline;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: var(--white); /* White */
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    background-color: var(--accent-color); /* Soft Pink */
+    color: var(--dark-purple); /* Dark Purple on hover */
+  }
+  
+  .login-btn {
+    background-color: var(--primary-color); /* Base Purple */
+    color: var(--white); /* White */
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .login-btn:hover {
+    background-color: var(--accent-color); /* Soft Pink on hover */
+    color: var(--dark-purple); /* Dark Purple */
+  }

@@ -1,0 +1,46 @@
+/* YesOrNo.css */
+.yes-or-no-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    background-color: #f4c2d7; /* Soft pink background */
+  }
+  
+  .yes-card, .no-card {
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    width: 45%; /* Width of each card */
+    height: 80%; /* Height of each card */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Shadow effect */
+
+    font-size: 2rem; /* Font size for Yes/No text */
+    color: white; /* Text color */
+    cursor: pointer; /* Cursor changes on hover */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+  }
+  
+  /* Set background images here */
+  .yes-card {
+    background-image: url('../../assets/thumbsup.svg'); /* Path to thumbs up image */
+  }
+  
+  .no-card {
+    background-image: url('../../assets/thumbsdown.svg'); /* Path to thumbs down image */
+  }
+  
+  /* Optional: Make text visible on backgrounds */
+  .yes-card h2, .no-card h2 {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Shadow effect */
+
+  }
+  
+  /* Hover effects */
+  .yes-card:hover, .no-card:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+  }
+  

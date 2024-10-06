@@ -1,0 +1,48 @@
+/* Hero.css */
+
+.hero {
+    background: url('../../assets/bg.jpg'); /* Replace with the correct path to your image */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white); /* Adjust text color to ensure visibility */
+    text-align: center;
+  }
+  
+
+  .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+  
+  .cta-button {
+    background-color: var(--accent-color); /* Soft Pink */
+    color: var(--dark-purple); /* Dark Purple */
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: var(--dark-purple); /* Dark Purple on hover */
+    color: var(--white); /* White */
+    transform: scale(1.05);
+  }
+  

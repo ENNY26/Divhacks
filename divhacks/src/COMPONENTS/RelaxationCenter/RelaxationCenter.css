@@ -1,0 +1,56 @@
+.relaxation-center {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4c2d7; /* Soft pink background */
+  }
+  
+  .relaxation-title {
+    color: #6b2d83; /* Dark purple */
+    font-size: 2rem;
+  }
+  
+  .relaxation-description {
+    color: #3a3a3a; /* Dark gray */
+    margin-bottom: 20px;
+  }
+  
+  .activities-section,
+  .sounds-section {
+    margin: 20px 0;
+  }
+  .relaxation-center {
+  text-align: center;
+  padding: 20px;
+  background-image: url('/path/to/your/background-image.jpg'); /* Add your image path here */
+  background-size: cover; /* Ensure the image covers the entire background */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  color: #3a3a3a; /* Dark gray */
+  min-height: 100vh; /* Ensure the background covers the full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Ensure titles and descriptions stand out against the background */
+.relaxation-title {
+  color: #ffffff; /* White to contrast against the background */
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow to improve readability */
+}
+
+.relaxation-description {
+  color: #f4c2d7; /* Soft pink to complement the background */
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); /* Add shadow to enhance readability */
+}
+
+.activities-section,
+.sounds-section {
+  margin: 20px 0;
+  background-color: rgba(255, 255, 255, 0.8); /* Add slight transparency to separate sections from background */
+  padding: 15px;
+  border-radius: 10px;
+}

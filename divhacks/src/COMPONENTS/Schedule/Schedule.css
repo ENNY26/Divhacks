@@ -1,0 +1,49 @@
+/* Scheduling.css */
+.scheduling-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: rgb(237, 210, 237); /* Optional: sets background color for the entire container */
+    background-image: url('../../assets/image.png'); /* Add your background image here */
+    background-size: cover;  /* Cover background image */
+    background-position: center; /* Center background image */
+    min-height: 100vh;  /* Ensure it covers the full height of the viewport */
+  }
+  
+  .scheduling-title {
+    width: 100%; 
+    text-align: center; 
+    color: var(--primary-color);
+    font-size: 2.5rem; 
+    margin-bottom: 20px; 
+  }
+  
+  .schedule-card {
+    width: 300px;          
+    height: 400px;         /* Fixed height */
+    display: flex;        /* Flexbox to center content */
+    justify-content: center;  /* Center content horizontally */
+    align-items: center;  /* Center content vertically */
+    color: white;         /* Text color */
+    font-size: 2rem;      /* Text size */
+    border-radius: 10px;  /* Rounded corners */
+    background-size: cover;  /* Cover background image */
+    background-position: center;  /* Center background image */
+    margin: 20px;        /* Space between cards */
+    cursor: pointer;      /* Change cursor to pointer */
+    transition: transform 0.3s ease;  /* Smooth scaling effect on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);  /* Optional: adds shadow effect to the cards */
+  }
+  
+  .schedule-card:hover {
+    transform: scale(1.05);  /* Slightly enlarge the card on hover */
+  }
+  
+  .card-text {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text */
+    padding: 10px;            /* Space around the text */
+    border-radius: 5px;      /* Rounded corners for the text background */
+    text-align: center;       /* Center text */
+  }
+  
